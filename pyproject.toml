@@ -1,0 +1,40 @@
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+# https://docs.astral.sh/ruff/rules/
+select = ["ALL"]
+ignore = [
+    # unsorted-imports
+    "I001",
+    # bad-quotes-inline-string
+    "Q000",
+    # docstring
+    "D",
+    # flake8-use-pathlib
+    "PTH",
+    # missing-type-self
+    "ANN101",
+    # flake8-future-annotations
+    "FA",
+    # raise-vanilla-args
+    "TRY003",
+    # flake8-errmsg
+    "EM",
+    # flake8-logging-format
+    "G",
+    # implicit-namespace-package
+    "INP001",
+    # missing-todo-link
+    "TD003",
+    #flake8-fixme
+    "FIX",
+    # missing-trailing-comma
+    "COM812",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"project/test.py" = [
+    # flake8-pytest-style
+    "PT",
+]
