@@ -20,6 +20,11 @@ class Solution:
 
         return False
 
+    def repeatedSubstringPattern2(self, s: 'str') -> 'bool':
+        # not mine
+        # https://leetcode.com/problems/repeated-substring-pattern/solutions/94334/easy-python-solution-with-explaination/
+        return s in (s + s)[1:-1]
+
 
 def main():
     sol = Solution()
